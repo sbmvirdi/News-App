@@ -9,7 +9,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:id="@+id/toolbar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -37,7 +37,7 @@
                 app:tabIndicatorHeight="2dp"
                 app:tabSelectedTextColor="#ffffff"
                 app:tabIndicatorColor="#ffffff"
-                app:tabBackground="@color/colorPrimary"
+                app:tabBackground="@color/colorPrimaryDark"
                 android:id="@+id/tab"
                 />
 

@@ -1,7 +1,9 @@
 package com.shubamvirdi.newsapp.Fragments;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -69,5 +71,10 @@ public class DynamicFragment extends Fragment {
             newsRec.setAdapter(adapter);
         });
         return view;
+    }
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
     }
 }
