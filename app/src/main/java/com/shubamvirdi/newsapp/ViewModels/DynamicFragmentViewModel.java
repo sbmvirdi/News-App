@@ -12,11 +12,16 @@ import com.shubamvirdi.newsapp.Repository.NewsRepository;
 import java.util.List;
 
 public class DynamicFragmentViewModel extends ViewModel {
+
     private MutableLiveData<NewsData> newsData = new MutableLiveData<>();
     private NewsRepository mRepo;
-    public void init(Context context,String newsId){
+
+    public void init(Context context, String newsId) {
+        // initialize the news repository object
         mRepo = NewsRepository.getInstance();
-        mRepo.getNewsByNewsId(context,newsId,newsdata->{
+
+        // get news by newsId
+        mRepo.getNewsByNewsId(context, newsId, newsdata -> {
             newsData.setValue(newsdata);
         });
     }

@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+// model class of news data
 public class NewsData {
     @SerializedName("status")
     private String status;

@@ -2,6 +2,7 @@ package com.shubamvirdi.newsapp.ModelClasses;
 
 import com.google.gson.annotations.SerializedName;
 
+// model class of article
 public class Article {
     @SerializedName("source")
     private Source source;

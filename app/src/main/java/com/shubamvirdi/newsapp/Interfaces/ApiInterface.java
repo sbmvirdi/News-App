@@ -9,11 +9,11 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
 
+    // api call to get the sources of news
     @GET("sources")
     Call<SourceHead> getAllNewsSources(@Query("apiKey") String API_KEY);
 
-    //https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=1c6b7923dc2b4f0c9a7ee509f1647736
-
+    // api call to get headlines of specific news id
     @GET("top-headlines")
-    Call<NewsData> getNewsData(@Query("sources") String sources,@Query("apiKey") String API_KEY);
+    Call<NewsData> getNewsData(@Query("sources") String sources, @Query("apiKey") String API_KEY);
 }

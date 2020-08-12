@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+// model class for source head
 public class SourceHead {
 
     @SerializedName("status")

@@ -3,6 +3,7 @@ package com.shubamvirdi.newsapp.SingletonClasses;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+// class to get instance of retrofit
 public class ApiClient {
 
     public static final String BASE_URL = "https://newsapi.org/v2/";
@@ -10,7 +11,7 @@ public class ApiClient {
 
 
     public static Retrofit getClient() {
-        if (retrofit==null) {
+        if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
