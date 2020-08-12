@@ -20,4 +20,8 @@ public class SourceHead {
     public List<Source> getSources() {
         return sources;
     }
+
+    public void setSources(List<Source> sources) {
+        this.sources = sources;
+    }
 }
